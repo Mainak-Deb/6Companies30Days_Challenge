@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.L": "csharp",
+        "string": "cpp"
+    }
+}
