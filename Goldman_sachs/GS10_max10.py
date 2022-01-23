@@ -34,9 +34,20 @@ class PriorityQueue(object):
             if(len(self.queue)>self.maxsize):self.queue.pop(0)
     def value(self):
       return self.queue
+    
+    def rear(self):
+        return self.queue[-1]
+    def front(self):
+        return self.queue[0] 
+    def remove(self,value):
+        pos=self.find_index(self.queue,len(self.queue),value)
+        self.queue.pop(pos)
+
 
 
 def FindMax10(arr):
+    #time complexity O(log2(10)n)
+    
     a=PriorityQueue(10)
     for i in arr: a.insert(i)
     return a.value()
