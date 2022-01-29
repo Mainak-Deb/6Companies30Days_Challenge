@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.L": "csharp",
+        "vector": "cpp"
+    }
+}
